@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>La Grande Démesure!</title>
+		<title>La Grande Demesure!</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	</head>
 	
@@ -13,19 +13,17 @@
     <a-scene embedded arjs='sourceType: webcam; trackingMethod: best; patternRatio: 0.9; debugUIEnabled: false; maxDetectionRate:30;' renderer="antialias: true">
 	
 		<a-assets>
-            <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous" />
+            <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous"/>
 			<a-asset-item id="helvetikerFont" src="fonts/helvetiker_regular.typeface.json"></a-asset-item>
         </a-assets>
 	
-    	<a-marker emitevents="true" id="logo-marker" type="pattern" url="markers/github-GrandDemesure.patt" cursor="rayOrigin: mouse" markerhandler>
+    	<a-marker emitevents="true" id="logo-marker" type="pattern" url="markers/github-GrandDemesure.patt" markerhandler>
 		  	<a-entity text-geometry="value: Virality; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="src: #goldenFoil; metalness:1; roughness: 0;">
-				<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+				<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite" />
 			</a-entity>
     	</a-marker>
 		
 		<a-entity camera="active: true; near: 1; far: 1000;"
-		    position="0 0 0"
-		    cursor="rayOrigin: mouse"
 		    data-aframe-default-camera>
 		</a-entity>
 		
