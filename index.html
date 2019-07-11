@@ -18,7 +18,7 @@
 			<a-asset-item id="helvetikerFont" src="fonts/helvetiker_regular.typeface.json" />
         </a-assets>
 	
-    	<a-marker emitevents="true" id="logo-marker" type='barcode' value='6'>
+    	<a-marker emitevents="true" id="logo-marker" type="pattern" url="markers/github-GrandDemesure.patt">
 		  	<a-entity text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="src: #goldenFoil; metalness:1; roughness: 0;">
 				<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite" />
 			</a-entity>
