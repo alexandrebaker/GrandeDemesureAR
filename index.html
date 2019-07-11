@@ -17,18 +17,12 @@
 		<a-assets>
             <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous" />
 			<a-asset-item id="helvetikerFont" src="fonts/helvetiker_regular.typeface.json"></a-asset-item>
-			<a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
-		
-		<a-entity text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="src: #goldenFoil; metalness:1; roughness: 0;">
-			<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation
-		</a-entity>
-			
+					
     	<a-marker id="text-marker" type='barcode' value='6'>
-		  	<a-entity
-                gltf-model="#animated-asset"
-                scale="2">
-            </a-entity>
+		  	<a-entity text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="src: #goldenFoil; metalness:1; roughness: 0;">
+				<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+			</a-entity>
     	</a-marker>
 		
 		<a-entity camera></a-entity
