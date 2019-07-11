@@ -11,7 +11,9 @@
 	<script src="js/aframe-text-geometry-component.js"></script>
 	
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs='deviceId: a41c4f09122750a91901efb4b3e68539d1c83081624632f0cbd8bdf17b2b46b8; sourceType: webcam; trackingMethod: best; patternRatio: 0.9; debugUIEnabled: true; maxDetectionRate:30;' renderer="antialias: true">
+    <a-scene embedded arjs='deviceId: a41c4f09122750a91901efb4b3e68539d1c83081624632f0cbd8bdf17b2b46b8; 
+		sourceType: webcam; trackingMethod: best; patternRatio: 0.9; debugUIEnabled: true; maxDetectionRate:30;
+		detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="antialias: true">
 	
 		<a-assets>
             <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous" />
