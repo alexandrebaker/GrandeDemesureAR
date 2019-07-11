@@ -16,13 +16,14 @@
 	
 		<a-assets>
             <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous" />
+			<img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
 			<a-asset-item id="helvetikerFont" src="fonts/helvetiker_regular.typeface.json"></a-asset-item>
         </a-assets>
 					
     	<a-marker id="text-marker" type='barcode' value='6'>
-		  	<a-entity position="0 10 0"
-				text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" material="src: #goldenFoil; metalness:1; roughness: 0;">
-				<a-animation easing="linear" attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+		  	<a-entity position="-5 2 0" 
+				text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" 
+				material="src: #goldenFoil; metalness:1; roughness: 0; sphericalEnvMap: #chrome">
 			</a-entity>
     	</a-marker>
 		
