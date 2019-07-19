@@ -14,13 +14,9 @@
 	<script src="js/camera_switcher.js"></script>
 	
 <body style="margin : 0px; overflow: hidden;">
-	<div class="controls">
-		  <button id="button">Get camera</button>
-		  <select id="select">
-				<option></option>
-		  </select>
-    </div>
-    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="antialias: true">
+
+     <a-scene embedded arjs='deviceId: a41c4f09122750a91901efb4b3e68539d1c83081624632f0cbd8bdf17b2b46b8; 
+		sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="antialias: true">
 	
 		<a-assets>
             <img id="goldenFoil" src="images/gold-foil.jpg" crossorigin="anonymous" />
