@@ -24,25 +24,32 @@
 			<img src="images/dust.png" id="dustTex">
 	        <img src="images/star.png" id="starTex">
 	        <img src="images/energy.png" id="energyTex">
+			<img src="images/sprite.png" id="particleTex">
 			
 			<a-asset-item id="particlesOrbJson" src="data/particles-orb.json"></a-asset-item>
 	        <a-asset-item id="particlesEnergyJson" src="data/particles-energy.json"></a-asset-item>
 	        <a-asset-item id="particlesDustJson" src="data/particles-dust.json"></a-asset-item>
+			
+			<a-asset-item id="particlesJson" src="particles-fireworks.json"></a-asset-item>
+       
 			<a-asset-item id="helvetikerFont" src="fonts/helvetiker_regular.typeface.json"></a-asset-item>
         </a-assets>
-		
+		<!-- 
 		<a-entity position="0 0 -2.5" rotation="0 -20 0">
 			<a-entity particleplayer="delay: 500; src: #particlesOrbJson; img: #starTex; dur: 4000; count: 40%; scale: 2.5; pscale: 9; interpolate: false; shader: standard; poolSize: 1; loop: true"></a-entity>
 	        <a-entity particleplayer="delay: 500; src: #particlesEnergyJson; img: #energyTex; dur: 4000; count: 100%; scale: 2.5; pscale: 2; interpolate: false; shader: standard; poolSize: 1; loop: true;"></a-entity>
 	        <a-entity particleplayer="delay: 500; src: #particlesDustJson; img: #dustTex; dur: 4000; count: 100%; scale: 2.5; pscale: 1; interpolate: false; shader: standard; poolSize: 1; loop: true; color: #aaf"></a-entity>
       	</a-entity>
+		-->
+		
+		<a-entity position="0 1 -5" trigger particleplayer="on: particleplayerstart; src: #particlesJson; img: #particleTex; dur: 4000; count: 50%; scale: 0.6; pscale: 2; interpolate: true; shader: standard; poolSize: 20"></a-entity>
 		
 		 <!-- lights -->
 		<a-light position="4 5 -10" type="point" color="#fca"></a-light>
 	    <a-light position="-6 14 20" type="point" color="#fca"></a-light>
 					
     	<a-marker id="text-marker" type='barcode' value='6'>
-		  	<a-entity position="-5 2 0" 
+		  	<a-entity position="-10 2 0" 
 				text-geometry="value: La Grande Demesure; font: #helvetikerFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0;" 
 				material="src: #goldenFoil; metalness:1; roughness: 0;">
 			</a-entity>
