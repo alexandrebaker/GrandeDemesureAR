@@ -11,7 +11,7 @@
 	<script src="js/aframe-extras.loaders.js"></script>
 	<script src="js/aframe-text-geometry-component.js"></script>
 	<script src="js/aframe-particleplayer-component.js"></script>
-	<!-- <script src="js/camera_switcher.js"></script> -->
+	<script src="js/gd.js"></script>
 	<!-- https://github.com/supermedium/aframe-particleplayer-component/blob/master/examples/fireworks/index.html -->
 	
 <body style="margin : 0px; overflow: hidden;">
@@ -36,15 +36,17 @@
 			<a-asset-item id="optimerFont" src="fonts/optimer_regular.typeface.json"></a-asset-item>
         </a-assets>
 		
+		<!--
 		<a-entity position="0 0 -10" rotation="0 -2 0">
 			<a-entity particleplayer="delay: 500; src: #particlesOrbJson; img: #starTex; dur: 4000; count: 40%; scale: 1; pscale: 9; interpolate: false; shader: standard; poolSize: 1; loop: true"></a-entity>
 	        <a-entity particleplayer="delay: 500; src: #particlesEnergyJson; img: #energyTex; dur: 4000; count: 100%; scale: 1; pscale: 2; interpolate: false; shader: standard; poolSize: 1; loop: true;"></a-entity>
 	        <a-entity particleplayer="delay: 500; src: #particlesDustJson; img: #dustTex; dur: 4000; count: 100%; scale: 1; pscale: 1; interpolate: false; shader: standard; poolSize: 1; loop: true; color: #aaf"></a-entity>
       	</a-entity>
+		-->
 		
-		
-		<!-- <a-entity position="0 0 0" trigger particleplayer="on: particleplayerstart; src: #particlesJson; img: #particleTex; dur: 4000; count: 50%; scale: 0.6; pscale: 2; interpolate: true; shader: standard; poolSize: 20"></a-entity> -->
-		
+		<!-- fireworks -->
+		<a-entity position="0 1 -5" trigger particleplayer="on: particleplayerstart; src: #particlesJson; img: #particleTex; dur: 4000; count: 50%; scale: 0.6; pscale: 2; interpolate: true; shader: standard; poolSize: 20"></a-entity>
+
 		 <!-- lights -->
 		<a-light position="4 5 -10" type="point" color="#fca"></a-light>
 	    <a-light position="-6 14 20" type="point" color="#fca"></a-light>
